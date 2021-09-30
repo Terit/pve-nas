@@ -75,14 +75,14 @@ pushd $TEMP_DIR >/dev/null
 SECTION_HEAD="PVE NAS"
 
 # Download external scripts
-wget -qL https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/pve_zfs_nas_add_jailuser_ct.sh
-wget -qL https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/pve_zfs_nas_add_poweruser_ct.sh
-wget -qL https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/pve_zfs_nas_add_rsyncuser_ct.sh
-wget -qL https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/pve_zfs_nas_base_folder_setup
-wget -qL https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/pve_zfs_nas_base_subfolder_setup
-wget -qL https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/pve_zfs_nas_chroot_programs_ct
-wget -qL https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/pve_zfs_nas_install_ssmtp_ct.sh
-wget -qL https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/pve_zfs_nas_install_proftpd_ct.sh
+wget -qL https://raw.githubusercontent.com/Terit/pve-nas/master/scripts/pve_zfs_nas_add_jailuser_ct.sh
+wget -qL https://raw.githubusercontent.com/Terit/pve-nas/master/scripts/pve_zfs_nas_add_poweruser_ct.sh
+wget -qL https://raw.githubusercontent.com/Terit/pve-nas/master/scripts/pve_zfs_nas_add_rsyncuser_ct.sh
+wget -qL https://raw.githubusercontent.com/Terit/pve-nas/master/scripts/pve_zfs_nas_base_folder_setup
+wget -qL https://raw.githubusercontent.com/Terit/pve-nas/master/scripts/pve_zfs_nas_base_subfolder_setup
+wget -qL https://raw.githubusercontent.com/Terit/pve-nas/master/scripts/pve_zfs_nas_chroot_programs_ct
+wget -qL https://raw.githubusercontent.com/Terit/pve-nas/master/scripts/pve_zfs_nas_install_ssmtp_ct.sh
+wget -qL https://raw.githubusercontent.com/Terit/pve-nas/master/scripts/pve_zfs_nas_install_proftpd_ct.sh
 
 
 
