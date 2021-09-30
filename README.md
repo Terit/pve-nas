@@ -78,7 +78,7 @@ Easy Scripts are based on bash scripting. Simply `Cut & Paste` our Easy Script c
 This Easy Script will create a new PVE NAS CT, create PVE NAS User Accounts, give the installer options to run our optional add-ons, and fully configure your new PVE NAS (Recommended).
 
 ```bash
-bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/pve_zfs_nas_create_ct.sh)"
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/Terit/pve-zfs-nas/master/scripts/pve_zfs_nas_create_ct.sh)"
 ```
 
 **Add-on** (optional)
@@ -92,7 +92,7 @@ Optional Add-on Easy Scripts can be run anytime. They are for adding new PVE NAS
 7. Create a new Medialab-Rsync Server CT (for Kodi players only)
 
 ```bash
-bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/pve_zfs_nas_easyscript_addon_ct.sh)"
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/Terit/pve-zfs-nas/master/scripts/pve_zfs_nas_easyscript_addon_ct.sh)"
 ```
 
 <hr>
