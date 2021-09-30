@@ -1399,8 +1399,8 @@ pct exec $CTID -- locale-gen >/dev/null
 
 # Ubuntu fix to avoid prompt to restart services during "apt upgrade"
 msg "Patching prompt to cease user inputs during CT upgrades..."
-pct exec $CTID -- sudo apt-get -y install debconf-utils >/dev/null
-pct exec $CTID -- sudo debconf-get-selections | grep libssl1.0.0:amd64 >/dev/null
+pct exec $CTID -- apt install -y debconf-utils >/dev/null
+pct exec $CTID -- debconf-get-selections | grep libssl1.0.0:amd64 >/dev/null
 pct exec $CTID -- bash -c "echo '* libraries/restart-without-asking boolean true' | sudo debconf-set-selections"
 
 # Set container timezone to match host
