@@ -128,7 +128,7 @@ CT_HOSTNAME_VAR="nas-01"
 CT_HOSTNAME_VAR=${CT_HOSTNAME_VAR,,}
 
 # Download external scripts
-wget -qL https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/pve_zfs_nas_setup_ct.sh
+wget -qL https://raw.githubusercontent.com/Terit/pve-nas/master/scripts/pve_zfs_nas_setup_ct.sh
 
 #########################################################################################
 # This script is for creating your PVE ZFS File Server (NAS) (nas-01) Container         #
@@ -137,7 +137,7 @@ wget -qL https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/p
 #########################################################################################
 
 # Command to run script
-# bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-zfs-nas/master/scripts/pve_zfs_nas_create_ct.sh)"
+# bash -c "$(wget -qLO - https://raw.githubusercontent.com/Terit/pve-nas/master/scripts/pve_zfs_nas_create_ct.sh)"
 
 # Clear the screen
 clear
@@ -189,7 +189,7 @@ Our default settings are:
     CT Gateway: ${YELLOW}192.168.1.5${NC}
     CT Virtual Disk Size (Gb): ${YELLOW}10${NC}
     CT RAM Memory to be allocated (Gb): ${YELLOW}2048${NC}
-    CT Root Password: ${YELLOW}ahuacate${NC}
+    CT Root Password: ${YELLOW}password${NC}
 
 You can accept Easy Script default values by pressing ENTER on your
 keyboard at each prompt. Or overwrite the default value by typing in your own
@@ -389,9 +389,9 @@ echo
 # Set PVE CT password
 msg "Set your $SECTION_HEAD CT root password..."
 while true; do
-  read -p "Enter CT root password: " -e -i ahuacate CT_PWD
+  read -p "Enter CT root password: " -e -i password CT_PWD
   echo
-  read -p "Confirmation. Retype your CT root password (again): " -e -i ahuacate CT_PWD_CHECK
+  read -p "Confirmation. Retype your CT root password (again): " -e -i password CT_PWD_CHECK
   echo "Validating your root password..."
   if [ "$CT_PWD" = "$CT_PWD_CHECK" ];then
     info "$SECTION_HEAD CT root password is set: ${YELLOW}$CT_PWD${NC}."
