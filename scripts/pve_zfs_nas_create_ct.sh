@@ -1421,7 +1421,7 @@ echo "POOL=$POOL" >> pve_zfs_nas_setup_ct_variables.sh
 echo "CT_HOSTNAME=$CT_HOSTNAME" >> pve_zfs_nas_setup_ct_variables.sh
 pct push $CTID pve_zfs_nas_setup_ct_variables.sh /tmp/pve_zfs_nas_setup_ct_variables.sh
 pct push $CTID pve_zfs_nas_setup_ct.sh pve_zfs_nas_setup_ct.sh -perms 755
-pct exec $CTID -- bash -c "/pve_zfs_nas_setup_ct.sh"
+# pct exec $CTID -- bash -c "/pve_zfs_nas_setup_ct.sh"
 
 
 # # Get network details and show completion message
