@@ -184,7 +184,7 @@ New CT|Medialab-Rsync|create a new PVE Medialab-Rsync CT server|https://test
 EOF
 
 # Create options list from input list
-unset options i
+# unset options i
 while read line; do
     options[i++]="$(echo $line | awk -F'|' '{ print $1,"-","\033[1;33m"$2"\033[0m","-",$3 }')"
 done < input_list
